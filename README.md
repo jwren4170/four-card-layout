@@ -20,12 +20,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](/screenshot.jpg)
+![screenshot](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://four-card-layout-psi.vercel.app/)
-- Live Site URL: [Add live site URL here](https://github.com/jwren4170/four-card-layout)
+- Solution URL: [Add live site URL here](https://github.com/jwren4170/four-card-layout)
+- Live Site URL: [Add solution URL here](https://four-card-layout-psi.vercel.app/)
 
 ### Built with
 
