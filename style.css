@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /* font-family, weights and sizes */
+  --ff-sans: "Poppins", sans-serif;
+
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  --fs-400: 0.9275rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.625rem;
+  --fs-900: 2.5rem;
+
+  /* colors primary */
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+
+  /* colors neutral */
+  --clr-very-dark-blue: hsl(234, 12%, 34%);
+  --clr-grayish-blue: hsl(229, 6%, 66%);
+  --clr-very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-regular);
+  line-height: 1.7;
+  color: var(--clr-grayish-blue);
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  color: var(--clr-very-dark-blue);
+}
+
+/* utility classes */
+.border-top-red {
+  border-top: 5px solid var(--clr-red);
+}
+
+.border-top-cyan {
+  border-top: 5px solid var(--clr-cyan);
+}
+
+.border-top-orange {
+  border-top: 5px solid var(--clr-orange);
+}
+
+.border-top-blue {
+  border-top: 5px solid var(--clr-blue);
+}
+
+/* general styles */
+header {
+  text-align: center;
+  margin-block: 3rem;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+.wrapper-narrow {
+  max-width: 550px;
+}
+
+/* specific styles */
+h1 {
+  font-weight: var(--fw-light);
+  text-wrap: balance;
+}
+
+h1 span {
+  font-weight: var(--fw-bold);
+}
+
+.layout-grid {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.layout-grid:first-child,
+.layout-grid:last-child {
+  align-items: center;
+}
+
+.col {
+  flex-basis: 100%;
+}
+
+.col:nth-of-type(2) > .card:nth-of-type(2) {
+  margin-top: 2rem;
+}
+
+.card {
+  padding: 2rem;
+  box-shadow: 0 1rem 1rem rgba(105, 152, 208, 0.3);
+  border-radius: 0.3rem;
+}
+
+.card img {
+  margin-left: 70%;
+}
+
+@media (width <= 52rem) {
+  header {
+    margin-block: 1rem;
+  }
+  .col {
+    width: 100%;
+  }
+  .wrapper,
+  .wrapper-narrow {
+    max-width: fit-content;
+    padding: 3rem;
+    text-wrap: pretty;
+  }
+  .layout-grid {
+    flex-direction: column;
+  }
+}
